@@ -17,7 +17,7 @@ Public Sub AddNewLine()
         lastRow = hospBook.Worksheets(i).Cells(Rows.Count, 1).End(xlUp).Row
         
         For foundRow = 1 To lastRow
-            If hospBook.Worksheets(i).Cells(foundRow, 1).Value = insertAbove Then 'its fine there's one column but use excel's FIND FUNCTIONS (no)
+            If hospBook.Worksheets(i).Cells(foundRow, 1).Value = insertAbove Then 'its fine there's one column but use excel's FIND FUNCTIONS
                 Exit For
             End If
         Next foundRow
